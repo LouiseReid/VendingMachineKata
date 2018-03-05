@@ -23,4 +23,18 @@ public class Tray {
     public ArrayList<Product> getStock() {
         return new ArrayList<>(this.stock);
     }
+
+    public int stockLevel(){
+        return this.stock.size();
+    }
+
+    public void addItem(Product product) {
+        if(stockLevel() < capacity){
+            stock.add(product);
+        }
+    }
+
+    public Product removeProduct(){
+        return stock.remove(0);
+    }
 }
