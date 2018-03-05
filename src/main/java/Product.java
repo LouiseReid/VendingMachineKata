@@ -5,5 +5,7 @@ public abstract class Product {
         this.name = name;
     }
 
-
+    public String getName() {
+        return name;
+    }
 }
