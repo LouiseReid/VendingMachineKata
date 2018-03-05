@@ -16,4 +16,14 @@ public class CustomerTest {
     public void customerHasName(){
         assertEquals("Louise", customer.getName());
     }
+
+    @Test
+    public void customerHasMoney(){
+        assertEquals(10.00, customer.getPurse(), 0.01);
+    }
+
+    @Test
+    public void customersProductsStartsOffAtZero(){
+        assertEquals(0, customer.productsSize());
+    }
 }

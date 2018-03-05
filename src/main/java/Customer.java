@@ -23,4 +23,8 @@ public class Customer {
     public ArrayList<Product> getProducts() {
         return new ArrayList<>(this.products);
     }
+
+    public int productsSize() {
+        return this.products.size();
+    }
 }
